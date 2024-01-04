@@ -16,7 +16,7 @@ function getWeather(e) {
 async function fetchWeatherData(location,weatherblock) {
   // Make an asynchronous request to fetch weather data
   try {
-    const response = await fetch('http://api.weatherapi.com/v1/current.json?key=f837339048424a1085344237240401&q='+location+'&aqi=no');
+    const response = await fetch('https://api.weatherapi.com/v1/current.json?key=f837339048424a1085344237240401&q='+location+'&aqi=no');
     
     if (!response.ok) {
       throw new Error('Failed to fetch weather data. Status: ' + response.status);
