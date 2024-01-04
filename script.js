@@ -3,8 +3,8 @@ document.getElementById('location-form').addEventListener('submit', getWeather);
 function getWeather(e) {
   e.preventDefault(); // Prevents the form from submitting in the traditional way
   
-  var loc = document.getElementById('location-input').value;
-  var weatherblock = document.getElementById('weather-data')
+  const loc = document.getElementById('location-input').value;
+  const weatherblock = document.getElementById('weather-data')
   try {
     // Assuming you are making a fetch request to get weather data
     fetchWeatherData(loc,weatherblock);
