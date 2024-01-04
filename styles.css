@@ -6,12 +6,13 @@
         padding: 20px;
         margin: 20px;
         position: absolute;
+        position: relative;
         left:25%;
         text-align: center;
         border-radius: 10px;
         box-shadow: 2px 2px 0px 0px rgb(80, 190, 231);
         background: linear-gradient(90deg, rgb(98, 188, 233) 0%, rgb(32, 149, 188) 32%, rgb(13, 77, 130) 70%);
-
+        
 }
 #location-input{
     width: 60%;
@@ -35,7 +36,7 @@ body{
     outline: none;
 }
 .search{
-    width: 15%;
+    width: 20%;
     height: 15%;
     background: rgb(229, 106, 5);
     border-radius: 4px;
@@ -45,4 +46,11 @@ body{
 }
 #weather-data{
     color: #ffffff;
+}
+.img{
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
 }

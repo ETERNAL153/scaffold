@@ -26,10 +26,10 @@ async function fetchWeatherData(location,weatherblock) {
     
     // Process the fetched data here
     console.log('Weather data:', data);
-    weatherblock.innerHTML = "<h3>" + data.location.name +"</h3>";
-    weatherblock.innerHTML += "<p>"+ data.current.condition.text+"</p>";
-    // "<img src="+ data.current.condition.icon +">"+"
-    weatherblock.innerHTML += "<p>"+data.current.feelslike_c + " °C" + "</p>";
+    document.getElementById('city').innerText = data.location.name;
+    document.getElementById('climate').innerText= data.current.condition.text;
+    document.getElementById('img').src = `https:${data.current.condition.icon}`;
+    document.getElementById('temp').innerHTML= "<p>"+data.current.feelslike_c + " °C"+"</p>";
   } catch (error) {
     weatherblock.innerHTML = "<h1>"+"Error: City not found"+"</h1>"
     console.error('Error: Failed to fetch weather data', error.message);
