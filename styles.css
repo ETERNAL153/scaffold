@@ -1,7 +1,7 @@
 
 #location-form{
         width: 50%;
-        height: 30%;
+        height: 25%;
         border: 2px solid rgb(126, 176, 174);
         padding: 20px;
         margin: 20px;
@@ -9,12 +9,40 @@
         left:25%;
         text-align: center;
         border-radius: 10px;
-        box-shadow: 4px 2px 0px 0px rgb(171, 188, 194);
+        box-shadow: 2px 2px 0px 0px rgb(80, 190, 231);
+        background: linear-gradient(90deg, rgb(98, 188, 233) 0%, rgb(32, 149, 188) 32%, rgb(13, 77, 130) 70%);
+
 }
 #location-input{
     width: 60%;
+    padding-left: 20px;
+    border-radius: 4px;
+    height: 20px;
 }
 .header{
     text-align: center;
+    color: #ffffff;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(98, 188, 233) 0%, rgb(32, 149, 188) 32%, rgb(13, 77, 130) 70%);
+}
+#location-input:hover{
+    cursor: pointer;
+}
+.input:focus{
+    border: none;
+    outline: none;
+}
+.search{
+    width: 15%;
+    height: 15%;
+    background: rgb(229, 106, 5);
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    
+}
+#weather-data{
     color: #ffffff;
 }
