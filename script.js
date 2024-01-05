@@ -27,7 +27,7 @@ async function fetchWeatherData(location,weatherblock) {
     // Process the fetched data here
     console.log('Weather data:', data);
     document.getElementById('city').innerText = data.location.name;
-    document.getElementById('climate').innerText= data.current.condition.text;
+    document.getElementById('climate').innerHTML= "<br>"+data.current.condition.text;
     document.getElementById('img').src = `https:${data.current.condition.icon}`;
     document.getElementById('temp').innerHTML= "<p>"+data.current.feelslike_c + " °C"+"</p>";
   } catch (error) {
